@@ -32,7 +32,7 @@
 #if 1
 typedef std::unordered_map<std::string, float> MapuSF;
 typedef std::unordered_set<std::string> SetuS;
-typedef std::pair<std::string, float> PairSF
+typedef std::pair<std::string, float> PairSF;
 typedef std::vector<PairSF> Vec0PairSF0;
 typedef std::unordered_map<std::string, Vec0PairSF0> MapuS1Vec0PairSF01;
 typedef std::unordered_map<uint64_t, float> MapuLuF;
@@ -46,9 +46,10 @@ typedef std::unordered_map<std::string, double> MapuSD;
 typedef std::unordered_map<std::string, MapuSD> MapuS0MapuSD0;
 typedef std::unordered_map<std::string, std::string> MapuSS;
 typedef std::unordered_map<std::string, MapuSS> MapuS0MapuSS0;
-typedef std::vector<double> VecD
+typedef std::vector<double> VecD;
 typedef std::unordered_map<std::string, VecD> MapuS0VecD0;
 typedef std::unordered_map<std::string, MapuS0VecD0> MapuS1MapuS0VecD01;
+typedef std::vector<std::shared_ptr<std::unordered_map<std::string, float>>> Vec0MapuSFPtr0;
 #else
 typedef std::unordered_map<std::string, float> MapSF;
 typedef std::unordered_set<std::string> HashSetS;
@@ -56,7 +57,7 @@ typedef std::unordered_map<std::string, std::vector<std::pair<std::string, float
 typedef std::unordered_map<uint64_t, float> HashMapLF;
 typedef std::shared_ptr<HashMapLF> HashMapLFPtr;
 typedef std::shared_ptr<MapSF> MapSFPtr;
-typedef std::unordered_map<std::string, MapSFPtr> MapSPmsf;
+typedef std::unordered_map<std::string, MapSFPtr> MapSPmsf; //MapuS0MapuSFPtr0
 typedef std::shared_ptr<MapSPmsf>  MapSPmsfPtr;
 typedef std::unordered_map<std::string, MapSF>  MapSMsf;
 typedef std::shared_ptr<MapSMsf> MapSMsfPtr;
@@ -71,4 +72,3 @@ typedef std::unordered_map<std::string, MapSVd> MapSMsvd;
 #endif
 
 #endif
-
