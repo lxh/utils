@@ -118,7 +118,7 @@ public:
         if(divisor <= 0.0f) {
             return false;
         }
-        for(int i = 0; i < v.size(); ++i) {
+        for(size_t i = 0; i < v.size(); ++i) {
             v[i] = v[i] / divisor;
         }
         return true;
